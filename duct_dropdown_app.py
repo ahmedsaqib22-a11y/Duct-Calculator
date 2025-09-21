@@ -42,13 +42,6 @@ if option == "Straight Duct":
             st.success(f"✅ Single Duct Area: {single_area:.2f} sq.ft")
             st.success(f"📦 Total Area ({int(qty)} pcs): {total_area:.2f} sq.ft")
 
-# 🔹 Reset Button
-    if st.button("Reset Straight Duct"):
-        st.session_state.duct_width = 0.0
-        st.session_state.duct_height = 0.0
-        st.session_state.duct_length = 0.0
-        st.session_state.duct_qty = 1
-
 # -----------------------------
 # 🔹 Elbow
 # -----------------------------
@@ -155,6 +148,7 @@ elif option == "End Cap":
 
         st.success(f"✅ Single End Cap Area: {single_area:.2f} sq.ft")
         st.success(f"📦 Total Area ({qty} pcs): {total_area:.2f} sq.ft")
+
 
 
 
